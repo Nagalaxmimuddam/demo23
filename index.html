@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //greeting message using function
+        name=prompt("enter your name");
+        function greet(g="dear"){
+            //console.log("hello " +name)
+            
+        }
+        //console.log("hello " +name)
+        greet()
+    console.log("hello " +name)
+    // function using with sum
+    a=+prompt("enter first number");
+    b=+prompt("enter second number");
+    function sum(){
+        console.log(a+b)
+    }
+    sum(a,b)
+    //factorial function
+
+f=+prompt("enter one number to get square value");
+function fac(){
+console.log(f*f)
+}
+fac()
+//Average Function
+
+function calAvg(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+const arr = [3,7,9,2,9,8,4,3];
+const average = calAvg(arr);
+console.log("Average:", average);
+
+//Vowels Function
+function findVowels() {
+  const str = prompt("Enter a string:");
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const foundVowels = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      foundVowels.push(str[i]);
+    }
+  }
+
+  if (foundVowels.length > 0) {
+    console.log("Vowels found:", foundVowels.join(", "));
+  } else {
+    console.log("No vowels found.");
+  }
+}
+findVowels();
+
+
+    //Temperature Converter
+    function convertTemp(temp,scale){
+            if(scale == 'C'){//converts farenheit to celcius
+                return (temp - 32) * 5/9;
+                }
+                else if(scale == 'F'){//coverts celcius to farenheit
+                    return (temp * 9/5) + 32;
+                }
+        }
+        console.log(convertTemp(132,"C"));
+        console.log(convertTemp(100,"C"));
+        console.log(convertTemp(32,"F"));
+        console.log(convertTemp(72,"F")); 
+    </script>
+    
+</body>
+</html>
